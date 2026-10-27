@@ -1,6 +1,9 @@
 # SkillScope
 
-A test platform for learners, built as a 3-week team project during a 6-week software development bootcamp (ValiIT!). Admins and managers create new tests and new questions. Admins can create new levels and competences. Both admin and managers can assign test to the users, and users complete the tests assigned to them.
+A test platform for learners, built as a 3-week team project during a 6-week software development bootcamp (ValiIT!). 
+Admins and managers create new tests and new questions. Admins can create new levels and competences. 
+Both admin and managers can assign test to the users, and users complete the tests assigned to them. Users can see active tests assigned to them as active and done tests as completed.
+Based on that they will either be directed to start the test and afterwords can see their results.
 
 > **Status:** work in progress. Not all planned features are finished (see "Project status" below).
 
@@ -74,12 +77,23 @@ The app runs at http://localhost:8081.
 
 ## My contribution
 
-Our team had 4 people and my part of the project was the following:
+Our team had 4 people and the first week at least was spent on planning, creating the database, mockups in Figma,
+creating tasks and dividing them. 
+My part of the project coding wise was the following:
 
-- Worked on the login view together with the team in the start of the project to get started. Created a POST request for /login. 
+- Worked on the login view together with the team in the start of the project to get started. Created a POST request for /login.
 - Built the /tests view that shows all tests in the system. Only managers and admin can see this view. I fetched all test data from the backend with a GET API request and built a reusable card component where the test information is viewed. Other views use this component as well.
+
+- ![TestsView.PNG](docs/images/TestsView.PNG)
+
 - Built the "My tests" view on /my-tests, which reuses the same components but shows only the tests assigned to the logged-in user (GET request tied to the user).
+
+![MyTestsView.PNG](docs/images/MyTestsView.PNG)
+
 - Created the POST endpoint in the backend for creating questions in the question bank. Due to tight timeframe the frontend side of this feature, which at the moment sits in a modal was completed with AI assistance. 
+
+![CreateNewQuestion.PNG](docs/images/CreateNewQuestion.PNG)
+
 
 ## Project status
 
