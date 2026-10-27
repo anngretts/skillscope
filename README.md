@@ -1,3 +1,5 @@
+This is my copy of a team project built with three other developers during the Vali-IT bootcamp. Contributors are visible in the commit history.
+
 # SkillScope
 
 A test platform for learners, built as a 3-week team project during a 6-week software development bootcamp (ValiIT!). 
@@ -84,7 +86,7 @@ My part of the project coding wise was the following:
 - Worked on the login view together with the team in the start of the project to get started. Created a POST request for /login.
 - Built the /tests view that shows all tests in the system. Only managers and admin can see this view. I fetched all test data from the backend with a GET API request and built a reusable card component where the test information is viewed. Other views use this component as well.
 
-- ![TestsView.PNG](docs/images/TestsView.PNG)
+![TestsView.PNG](docs/images/TestsView.PNG)
 
 - Built the "My tests" view on /my-tests, which reuses the same components but shows only the tests assigned to the logged-in user (GET request tied to the user).
 
@@ -97,6 +99,6 @@ My part of the project coding wise was the following:
 
 ## Project status
 
-The core views and role structure are in place. Many planned functionality is not finished yet, because the project was built in three weeks but it is in progress.
+The core views and role structure are in place. Many planned functionalities are not finished yet, because the project was built in three weeks but it is in progress.
 
 Known limitations: user passwords in the sample data are stored as plain text, because password hashing (e.g. BCrypt with Spring Security) was not implemented within the project timeframe. The sample data is dummy data only. Do not use real passwords with this project.
